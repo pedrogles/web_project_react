@@ -1,0 +1,25 @@
+@import "global.scss";
+
+.app{
+    height: 100vh;
+
+    .sessoes{
+        width: 100%;
+        height: calc(100vh - 85px);
+        background-color: $paleta4;
+        position: relative;
+        top: 85px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory; // Tipo de rolar
+        scrollbar-width: none;   // Retira scrollbar no Firefox.
+        &::-webkit-scrollbar{    // O mesmo em outros navegadores.
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 85px);
+            scroll-snap-align: start;
+        }
+    }
+}

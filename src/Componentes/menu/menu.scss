@@ -1,0 +1,78 @@
+@import "../../global.scss";
+
+.menu{
+    width: 300px;
+    height: calc(100vh - 70px);
+    background-color: $paleta4;
+    color: $paleta1;
+    position: fixed;
+    top: 70px;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1 ease;
+
+    &.ativo{
+        right: 0;
+        
+        ul{
+            top: 140px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 30px;
+            font-weight: 50;
+            color: $paleta1;
+        }
+        li{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            a{
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+    .cima{
+        ul{
+            li{
+                padding: 0;
+
+                a{
+                    color: $paleta1;
+                }
+                a:hover{
+                    color: $paleta1;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .baixo{
+        font-size: 14px;
+        padding: 10px;
+        
+        .link-git{
+            
+            .link{
+                padding: 5px;
+            }
+            
+            .git{
+                padding: 5px;
+            }
+            
+            a{
+                text-decoration: none;
+                color: $paleta1;
+            }
+            a:hover{
+                color: $paleta2;
+            }  
+        }       
+    }
+}

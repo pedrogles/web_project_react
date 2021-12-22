@@ -1,0 +1,74 @@
+@import "../../global.scss";
+
+.sobre{
+    background-color: $paleta2;
+    display: flex;
+    
+
+    .esquerda{
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .sobrepedro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            p{
+                text-shadow: $paleta5 0.1em 0.1em 0.2em;
+                font-size: clamp(1vw, 1.2vw, 1.8vw);
+                color: $paleta1;
+                overflow: hidden;
+                width: 25em;
+                padding: 10px;
+                text-align: left;
+                
+                span{
+                    color: $paleta1;
+
+                }
+
+                .ityped-cursor{
+                    animation: piscar 1s infinite;
+                }
+
+                @keyframes piscar {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                    
+                }
+            }
+            .seta{
+                color: $paleta1;
+                animation: pisca-seta 2s infinite;
+            }
+            @keyframes pisca-seta {
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .direita{
+        flex: 0.5;
+        overflow-y: hidden;
+        
+        .zeroum{
+            cursor: default;
+            overflow-y: hidden;
+            width: 200%;
+            height: 200%;
+            font-size: 15px;
+            color: $paleta1;
+            opacity: 10%;
+
+        }
+    }
+}

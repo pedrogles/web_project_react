@@ -1,0 +1,66 @@
+@import "../../global.scss";
+
+.intro{
+    background-color: $paleta1;
+    display: flex;
+
+    .direita{
+        flex: 0.5;
+        overflow: hidden;
+
+        .apresentacao{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color: $paleta5;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        h2{
+            color: $paleta5;
+            font-size: 17px;
+            margin: 5px;
+        }
+        h3{ 
+            color: $paleta4;
+            font-size: 10px;
+            margin: 5px;
+        }
+        .seta{
+            color: $paleta5;
+            animation: pisca-seta 2s infinite;
+        }
+        @keyframes pisca-seta {
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+    .esquerda{
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+        .photome{
+            overflow: hidden;
+            border-width: 15px;
+            border-style: solid;
+            border-color: $paleta1;
+            border-radius: 20%;
+            border-bottom: 0px;
+            border-top: 0px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import "../../global.scss";
+
+.topbar{
+    width: 100%;
+    height: 85px;
+    background-color: $paleta1;
+    color: $paleta4;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 3;
+    transition: all 2 ease;
+
+    .conteiner{
+        padding: 20px 15px;
+        display: flex;
+        justify-content: space-between;
+        
+        .esquerda{
+            
+            .logo{
+                font-size: 26px;
+                font-weight: 700;
+                color: inherit;
+            }
+            .frontend{
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+        .direita{
+
+            .hamburguer{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                
+
+                span{
+                    width: 100%;
+                    height: 3px;
+                    background-color: $paleta4;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+    &.ativo{
+        background-color: $paleta4;
+        color: $paleta1;
+
+        .hamburguer{
+            span{
+                &:first-child{
+                    background-color: $paleta1;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: $paleta1;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
