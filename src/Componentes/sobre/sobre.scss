@@ -1,9 +1,9 @@
 @import "../../global.scss";
 
 .sobre{
-    background-color: $paleta2;
+    background-color: $paleta4;
     display: flex;
-    
+
 
     .esquerda{
         flex: 0.5;
@@ -11,6 +11,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+
+        @include mobile{
+            flex:  1;
+        }
 
         .sobrepedro{
             display: flex;
@@ -19,12 +24,16 @@
             
             p{
                 text-shadow: $paleta5 0.1em 0.1em 0.2em;
-                font-size: clamp(1vw, 1.2vw, 1.8vw);
+                font-size: 15px;
                 color: $paleta1;
                 overflow: hidden;
                 width: 25em;
                 padding: 10px;
                 text-align: left;
+
+                @include mobile{
+                    font-size: 15px;
+                }
                 
                 span{
                     color: $paleta1;
@@ -46,6 +55,7 @@
                 }
             }
             .seta{
+                margin: 20px;
                 color: $paleta1;
                 animation: pisca-seta 2s infinite;
             }
@@ -54,11 +64,27 @@
                     opacity: 0;
                 }
             }
+            .download{
+                color: $paleta5;
+                font-size: 10px;
+                background-color: $paleta1;
+                border-radius: 20px;
+                padding: 5px;
+                text-decoration: none;
+            }
+            .download:hover{
+                background-color: $paleta2;
+                color: $paleta1;
+            }
         }
     }
     .direita{
         flex: 0.5;
         overflow-y: hidden;
+
+        @include mobile{
+            flex:  0;
+        }
         
         .zeroum{
             cursor: default;

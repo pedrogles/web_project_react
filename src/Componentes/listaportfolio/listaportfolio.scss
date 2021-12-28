@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+.listaportfolio{
+    display: flex;
+    color: $paleta1;
+    padding: 5px 10px;
+    margin: 5px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    @include mobile{
+        font-size: 10px;
+    }
+    
+    &.ativo{
+        background-color: $paleta1;
+        color: $paleta5;
+        text-decoration: underline;
+        
+    }
+}

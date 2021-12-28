@@ -5,6 +5,7 @@ import Sobre from "./Componentes/sobre/Sobre";
 import Projetos from "./Componentes/projetos/Projetos";
 import Contato from "./Componentes/contato/Contato";
 import Menu from "./Componentes/menu/Menu";
+import Habilidades from "./Componentes/habilidades/Habilidades";
 import { useState } from "react";
 
 
@@ -18,6 +19,7 @@ function App() {
         <Intro/>
         <Sobre/>
         <Projetos/>
+        <Habilidades/>
         <Contato/>
       </div>
     </div>

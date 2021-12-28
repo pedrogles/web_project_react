@@ -3,3 +3,12 @@ $paleta2: #434EE0;
 $paleta3: #000FDB;
 $paleta4: #00065C;
 $paleta5: #000000;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+    
+}

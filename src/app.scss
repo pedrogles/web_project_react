@@ -5,10 +5,10 @@
 
     .sessoes{
         width: 100%;
-        height: calc(100vh - 85px);
+        height: calc(100vh - 80px);
         background-color: $paleta4;
         position: relative;
-        top: 85px;
+        top: 80px;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory; // Tipo de rolar
         scrollbar-width: none;   // Retira scrollbar no Firefox.
@@ -18,7 +18,7 @@
 
         > *{
             width: 100vw;
-            height: calc(100vh - 85px);
+            height: calc(100vh - 80px);
             scroll-snap-align: start;
         }
     }

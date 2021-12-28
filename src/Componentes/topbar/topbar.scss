@@ -2,7 +2,7 @@
 
 .topbar{
     width: 100%;
-    height: 85px;
+    height: 80px;
     background-color: $paleta1;
     color: $paleta4;
     position: fixed;
@@ -12,19 +12,23 @@
     transition: all 2 ease;
 
     .conteiner{
-        padding: 20px 15px;
+        padding: 15px 15px;
         display: flex;
         justify-content: space-between;
         
         .esquerda{
             
             .logo{
-                font-size: 26px;
+                font-size: 25px;
                 font-weight: 700;
                 color: inherit;
+
+                @include mobile{
+                    font-size: 20px;
+                }
             }
             .frontend{
-                font-size: 12px;
+                font-size: 15px;
                 font-weight: 300;
             }
         }
@@ -50,7 +54,7 @@
         }
     }
     &.ativo{
-        background-color: $paleta4;
+        background-color: $paleta5;
         color: $paleta1;
 
         .hamburguer{
