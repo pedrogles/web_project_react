@@ -5,12 +5,12 @@
     color: $paleta1;
     padding: 5px 10px;
     margin: 5px 20px;
-    font-size: 15px;
+    font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
 
-    @include mobile{
-        font-size: 10px;
+    @include mobile(md) {
+        font-size: 0.8em;
     }
     
     &.ativo{

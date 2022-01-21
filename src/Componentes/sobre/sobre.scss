@@ -13,7 +13,7 @@
         align-items: center;
         position: relative;
 
-        @include mobile{
+        @include mobile(md){
             flex:  1;
         }
 
@@ -22,17 +22,25 @@
             flex-direction: column;
             align-items: center;
             
+            .p1{
+                margin-top: 30px;
+                
+                @include mobile(md){
+                    margin-top: 10px;
+                }
+            }
             p{
                 text-shadow: $paleta5 0.1em 0.1em 0.2em;
-                font-size: 15px;
+                font-size: 1em;
                 color: $paleta1;
                 overflow: hidden;
-                width: 25em;
+                width: 66%;
                 padding: 10px;
                 text-align: left;
 
-                @include mobile{
-                    font-size: 15px;
+                @include mobile(md){
+                    width: 90%;
+                    font-size: 0.8em;
                 }
                 
                 span{
@@ -55,6 +63,7 @@
                 }
             }
             .seta{
+                overflow: hidden;
                 margin: 20px;
                 color: $paleta1;
                 animation: pisca-seta 2s infinite;
@@ -65,16 +74,15 @@
                 }
             }
             .download{
-                color: $paleta5;
-                font-size: 10px;
-                background-color: $paleta1;
-                border-radius: 20px;
+                overflow: hidden;
+                margin-top: 5px;
+                color: $paleta1;
+                font-size: 0.8em;
                 padding: 5px;
-                text-decoration: none;
+                text-decoration: underline;
             }
             .download:hover{
-                background-color: $paleta2;
-                color: $paleta1;
+                color: $paleta2;
             }
         }
     }
@@ -82,7 +90,7 @@
         flex: 0.5;
         overflow-y: hidden;
 
-        @include mobile{
+        @include mobile(md) {
             flex:  0;
         }
         
@@ -91,10 +99,13 @@
             overflow-y: hidden;
             width: 200%;
             height: 200%;
-            font-size: 15px;
+            font-size: 1em;
             color: $paleta1;
             opacity: 10%;
-
+            
+            @include mobile(xl) {
+                font-size: 1.3em;
+            }
         }
     }
 }

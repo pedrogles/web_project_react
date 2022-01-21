@@ -1,15 +1,20 @@
-import iate2 from "./screenshot/iate/iate2.jpeg";
 import iate1 from "./screenshot/iate/iate1.jpeg";
-import intro from "./screenshot/web_portfolio/intro.jpeg";
-import menu from "./screenshot/web_portfolio/menu.jpeg";
-import sobre from "./screenshot/web_portfolio/sobre.jpeg";
-import projetos from "./screenshot/web_portfolio/projetos.jpeg";
+import iate2 from "./screenshot/iate/iate2.jpeg";
+
+import intro from "./screenshot/web_portfolio/intro.png";
+import menu from "./screenshot/web_portfolio/menu.png";
+import sobre from "./screenshot/web_portfolio/sobre.png";
+import projetos from "./screenshot/web_portfolio/projetos.png";
+import habilidades from "./screenshot/web_portfolio/habilidades.png";
+import contato from "./screenshot/web_portfolio/contato.png";
+
 import snakephoto from "./screenshot/snake_game/snakephoto.jpeg";
 import snakephoto2 from "./screenshot/snake_game/snakephoto2.jpeg";
 import snakephoto3 from "./screenshot/snake_game/snakephoto3.jpeg";
 import snakephoto4 from "./screenshot/snake_game/snakephoto4.jpeg";
 import snakephoto5 from "./screenshot/snake_game/snakephoto5.jpeg";
 import snakephoto6 from "./screenshot/snake_game/snakephoto6.jpeg";
+
 
 export const portfolioweb = [
     {
@@ -35,12 +40,12 @@ export const portfolioweb = [
     {
         id: 5,
         title: "Habilidades",
-        img: menu,
+        img: habilidades,
     },
     {
         id: 6,
         title: "Contato",
-        img: sobre,
+        img: contato,
     },
 ];
 export const snakegame = [
@@ -83,26 +88,6 @@ export const alugueldeiates = [
     },
     {
         id: 2,
-        title: "Aluguel de Iates",
-        img: iate1,
-    },
-    {
-        id: 3,
-        title: "Aluguel de Iates",
-        img: iate1,
-    },
-    {
-        id: 4,
-        title: "Aluguel de Iates",
-        img: iate2,
-    },
-    {
-        id: 5,
-        title: "Aluguel de Iates",
-        img: iate2,
-    },
-    {
-        id: 6,
         title: "Aluguel de Iates",
         img: iate2,
     },

@@ -1,28 +1,33 @@
 import "./menu.scss"
 import {LinkedIn, GitHub} from "@material-ui/icons"
 import InstagramIcon from '@mui/icons-material/Instagram';
+import CallIcon from '@mui/icons-material/Call';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+
 
 export default function Menu({ menuAberto, setMenuAberto }) {
     return (
         <div className={"menu " + (menuAberto && "ativo")}> 
             <div className="cima">
-                <ul>
-                    <li onClick={()=>setMenuAberto(false)}>
-                        <a href="#intro">Home</a>
-                    </li>
-                    <li onClick={()=>setMenuAberto(false)}>
-                        <a href="#sobre">Sobre</a>
-                    </li>
-                    <li onClick={()=>setMenuAberto(false)}>
-                        <a href="#projetos">Projetos</a>
-                    </li>
-                    <li onClick={()=>setMenuAberto(false)}>
-                        <a href="#habilidades">Habilidades</a>
-                    </li>
-                    <li onClick={()=>setMenuAberto(false)}>
-                        <a href="#contato">Contato</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li onClick={()=>setMenuAberto(false)}>
+                            <a href="#intro">Home</a>
+                        </li>
+                        <li onClick={()=>setMenuAberto(false)}>
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                        <li onClick={()=>setMenuAberto(false)}>
+                            <a href="#projetos">Projetos</a>
+                        </li>
+                        <li onClick={()=>setMenuAberto(false)}>
+                            <a href="#habilidades">Habilidades</a>
+                        </li>
+                        <li onClick={()=>setMenuAberto(false)}>
+                            <a href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div className="baixo">
                 <div className="link">

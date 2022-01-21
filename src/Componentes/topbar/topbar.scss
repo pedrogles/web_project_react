@@ -4,7 +4,7 @@
     width: 100%;
     height: 80px;
     background-color: $paleta1;
-    color: $paleta4;
+    color: $paleta5;
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -23,7 +23,7 @@
                 font-weight: 700;
                 color: inherit;
 
-                @include mobile{
+                @include mobile(md){
                     font-size: 20px;
                 }
             }

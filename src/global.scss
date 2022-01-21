@@ -4,11 +4,40 @@ $paleta3: #000FDB;
 $paleta4: #00065C;
 $paleta5: #000000;
 
-$width: 768px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xl2: 1536px; 
 
-@mixin mobile {
-    @media (max-width: #{$width}) {
-        @content
+@mixin mobile($point) {
+    @if $point == sm {
+        @media (max-width: #{$sm}) { 
+            @content;
+        }
     }
-    
+
+    @else if $point == md {
+        @media (max-width: #{$md}) {
+            @content;
+        }
+    }
+
+    @else if $point == lg {
+        @media (max-width: #{$lg}) {
+            @content;
+        }
+    }
+
+    @else if $point == xl {
+        @media (max-width: #{$xl})  {
+            @content;
+        }
+    }
+
+    @else if $point == xl2 {
+        @media (max-width: #{$xl2})  {
+            @content;
+        }
+    }
 }

@@ -18,7 +18,7 @@ export default function Intro() {
             </div>
             <div className="direita">
                 <div className="apresentacao">
-                    <h1>Web Portfólio.</h1>
+                    <h1>PORTFÓLIO</h1>
                     <h2>Projetos Profissionais, Pessoais e Universitários.</h2>
                     <h3>Para saber um pouco mais sobre Pedro, clique na seta a baixo.</h3>
                     <a href="#sobre" className="seta"><KeyboardArrowDown/></a>

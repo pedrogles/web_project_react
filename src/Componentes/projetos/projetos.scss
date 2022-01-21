@@ -11,7 +11,7 @@
         margin-top: 40px;
         color: $paleta1;
         font-weight: 600;
-        font-size: 25px;
+        font-size: 1.6em;
     }
     ul{
         margin: 10px;
@@ -19,7 +19,6 @@
         list-style: none;
         display: flex;
         border-radius: 20px;
-        border: 1px solid $paleta1;
     }
     .conteiner{
         height: 310px;
@@ -27,8 +26,16 @@
         position: absolute;
         top: 150px;
         left: 0;
-        transition: all 2s ease-out;
-        
+        transition: all 0.5s ease-out;
+       
+        @include mobile(md){
+            height: 400px;    
+            width: 1000vw;    
+        }
+
+        @include mobile(sm){
+            top: 20%    
+        }
 
         .itens{
             width: 100vw;
@@ -39,13 +46,14 @@
             transition: ease 5s ease;
 
 
-
             .setaEsquerda{
                 color: $paleta1;
                 margin: 0 60px;
                 cursor: pointer;
-
                 
+                @include mobile(md) {
+                    margin: 3px;
+                }
             }
 
             img{
@@ -56,6 +64,9 @@
                 object-fit: cover;
                 z-index: 1;
                 
+                @include mobile(md) {
+                    height: 40%;
+                }
             }
 
             .setaDireita{
@@ -63,14 +74,27 @@
                 margin: 0 60px;
                 cursor: pointer;
                 
+                @include mobile(md) {
+                    margin: 3px;
+                }
             }
         }
     }
+    
     .seta{
         color: $paleta1;
         position: absolute;
         top: 78vh;
         animation: pisca-seta 2s infinite;
+        
+        @include mobile(md) {
+            top: 83%;
+            top: 79%;       
+        }
+
+        @include mobile(sm){
+            top: 80%;    
+        }
     }
     @keyframes pisca-seta {
         100% {

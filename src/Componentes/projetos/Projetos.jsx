@@ -65,8 +65,7 @@ export default function Projetos() {
                 <div className="itens">
                    <ArrowBackIosNewIcon fontSize="large" className="setaEsquerda" 
                    onClick={()=>clicou("esquerda")}/>
-                   <img src={d.img} 
-                   alt=""/>
+                   <img src={d.img} alt=""/>
                    <ArrowForwardIosIcon fontSize="large" className="setaDireita" 
                    onClick={()=>clicou("direita")}/>
                </div>

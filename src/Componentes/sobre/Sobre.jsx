@@ -19,13 +19,12 @@ export default function Sobre() {
         <div className="sobre" id="sobre">
             <div className="esquerda">
                 <div className="sobrepedro">
-                    <p>Olá, Tudo bem? Me chamo <span ref={efeito}></span></p> 
+                    <p className='p1'>Olá, Tudo bem? Me chamo <span ref={efeito}></span></p> 
                     <p>Sou natural de João Pessoa/PB, tenho 25 anos e estou na   Graduação de Sistemas para Internet (2.º Período).</p>
                     <p>Sou apaixonado por tecnología e vi em Desenvolvimento Front-end uma oportunidade de crescer profissionalmente. Desde então venho me dedicando cada vez mais na área em busca de conhecimento. Tenho curso de Produção Gráfica Digital, uma mente muito criativa, muita disposição para aprender e inglês intermediário.</p>
                     <p>Surfista, surfskatista, ciclista e corredor em horas vagas, tenho como hobbie também a fotografia e busco estar sempre próximo a natureza.</p>
                     <p>Tive vivências na área de saúde através do curso de Terapia Ocupacional (3.º Período/trancado), experiência em atendimento ao Público como atendente de hamburgueria e pizzaria, já trabalhei como banhista em Petshop, cuidador de cães e assistente em instalação e manutenção de ar-condicionados.</p>
-                    <a className="download"
-                    href={pdf} download>Download Curriculo em pdf.</a>
+                    <a className="download" href={pdf} download>Download Curriculo em pdf.</a>
                     <a href="#projetos" className="seta"><KeyboardArrowDown/></a>
                 </div>
             </div>

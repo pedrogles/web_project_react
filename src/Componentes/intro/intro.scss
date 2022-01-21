@@ -1,16 +1,22 @@
 @import "../../global.scss";
 
 .intro{
-    background-color: $paleta1;
+    background: linear-gradient(180deg, $paleta1, $paleta5);
+    padding-top: 20px;
     display: flex;
+    overflow: hidden;
 
-    @include mobile{
-        flex-direction: column;
+    @include mobile(md) {
+        flex-direction: column-reverse;
     }
 
     .direita{
-        flex: 0.5;
+        flex: 0.9;
         overflow: hidden;
+
+        @include mobile(md) {
+            flex: 0.4;
+        }
 
         .apresentacao{
             width: 100%;
@@ -20,48 +26,80 @@
             justify-content: center;
             align-items: center;
         }
+        
         h1{
-            color: $paleta5;
-            font-size: 30px;
-            text-decoration: underline;
+            padding: 0 20px;
+            text-shadow: rgb(185, 185, 185) 0.05em 0.05em 0.01em;
+            font-size: 3em;
         }
+        
         h2{
-            color: $paleta5;
-            font-size: 17px;
+            color: rgb(0, 0, 0);
+            font-size: 1em;
+            padding: 5px 10px;
+            border: 1px solid rgb(197, 197, 197);
+            border-radius: 20px;
             margin: 5px;
+
+            @include mobile(sm) {
+                font-size: 0.8em;
+            }            
         }
-        h3{ 
-            color: $paleta4;
-            font-size: 10px;
+
+        h3{
+            color: $paleta1;
+            font-size: 0.6em;
             margin: 5px;
+            padding-bottom: 20px; 
         }
+        
         .seta{
-            color: $paleta5;
+            color: $paleta1;
             animation: pisca-seta 2s infinite;
         }
+        
         @keyframes pisca-seta {
             100% {
                 opacity: 0;
             }
         }
     }
+    
     .esquerda{
         flex: 0.5;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         overflow: hidden;
-        
+
+        @include mobile(xl2) {
+            flex: 0.46;
+        }
+
+        @include mobile(xl) {
+            height: 1000px;
+        }
+
+        @include mobile(md) {
+            flex: 0.34;
+            align-items: flex-start;
+        }
+
+
         .photome{
             overflow: hidden;
-            border-width: 15px;
-            border-style: solid;
-            border-color: $paleta1;
-            border-radius: 20%;
-            border-bottom: 0px;
-            border-top: 0px;
+
+            @include mobile(md) {
+                width: 200px;
+            }
+
+            @include mobile(xl) {
+                
+            }
+            
         }
+        
         img{
             height: 100%;
             width: 100%;
